@@ -1,6 +1,17 @@
 local last_class = nil
 
 --
+-- Function: isclass(any obj)
+-- Description: Checks whether object is class or not.
+-- Argument: any obj - Object to check.
+-- 
+-- Returns: boolean - Whether object is class or not.
+--
+isclass = function(obj)
+  return istable(obj.class) and isstring(obj.class_name)
+end
+
+--
 -- Function: class(string name, table parent = _G, class parent_class = nil)
 -- Description: Creates a new class. Supports constructors and inheritance.
 -- Argument: string name - The name of the library. Must comply with Lua variable name requirements.
@@ -67,7 +78,7 @@ function class(name, parent_class)
         return parent_class.init(new_obj, ...)
       end
 
-      real_class.init = isfunction(real_class.init) and real_class.init or function(obj) super() end
+      real_class.init = isfunction(real_class.init) and real_class.init or function(obj, ...) super(...) end
     end
 
     -- If there is a constructor - call it.
@@ -149,8 +160,9 @@ function extends(parent_class)
         error_with_traceback(tostring(exception))
       end
     end
-
-    obj = copy
+    
+    table.safe_merge(obj, copy)
+    
     obj.parent = parent_class
     obj.BaseClass = obj.parent_class
 

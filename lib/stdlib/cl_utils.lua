@@ -2,7 +2,6 @@ do
   local cache = {}
 
   function util.text_size(text, font)
-    if not text then text='' end
     font = font or 'default'
 
     if cache[text] and cache[text][font] then

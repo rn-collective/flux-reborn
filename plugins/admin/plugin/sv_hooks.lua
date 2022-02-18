@@ -124,7 +124,6 @@ function Bolt:PlayerPermissionChanged(player, perm_id, value)
 end
 
 function Bolt:PlayerUserGroupChanged(player, group, old_group)
-  if not group then return end
   if group:can('toolgun') then
     player:Give('gmod_tool')
   else

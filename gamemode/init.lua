@@ -33,12 +33,6 @@ if Flux.initialized then
 else
   Crate:include 'flux'
   MsgC(Color(0, 255, 100, 255), 'Boot complete in '..math.Round(os.clock() - start_time, 3)..' second(s)\n')
-
-  print('adding workshop addons:')
-  for i, v in ipairs(engine.GetAddons()) do
-    resource.AddWorkshop(v.wsid)
-    print(i..'>added '..v.wsid)
-  end
 end
 
 print_debug_metrics()
