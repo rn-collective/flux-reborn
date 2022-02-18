@@ -125,6 +125,10 @@ do
     return math.scale_x(x), math.scale(y)
   end
 
+  function math.scale_min(size)
+    return math.min(math.scale(size), math.scale_x(size))
+  end
+
   math.scale_y      = math.scale
   math.scale_width  = math.scale_x
   math.scale_height = math.scale
