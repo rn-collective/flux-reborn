@@ -3,7 +3,8 @@ PLUGIN:set_name('Visible Legs')
 PLUGIN:set_author('NightAngel')
 PLUGIN:set_description("Lets clients see their character's legs.")
 
-if !CLIENT then return end
+-- if !CLIENT then return end
+if true then return end
 
 local hiddenBones = {
   'ValveBiped.Bip01_Head1',
