@@ -1,0 +1,5 @@
+name: Ragdoll
+description: Allows players to enter ragdolled state. Also makes their corpses persist after death.
+author: TeslaCloud Studios
+depends:
+  - admin

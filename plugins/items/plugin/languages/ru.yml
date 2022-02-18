@@ -1,0 +1,36 @@
+ru:
+  condition:
+    has_item:
+      name: Игрок с определенным предметом в инвентаре
+      text: Имеет предмет {operator} {item}
+      message: Введите id предмета
+    has_item_data:
+      name: Персонаж с предметом, содержащим определенное значение данных
+      text: Имеет предмет {item} с данными {key} {operator} {value}
+      message1: Введите id предмета
+      message2: Введите индекс данных
+      message3: Введите значение данных
+  item:
+    category:
+      consumables: Расходные материалы
+      equipment: Экипировка
+      clothing: Одежда
+      other: Разное
+      weapon: Оружие
+      ammo: Боеприпасы
+      throwable: Метательное
+    slot:
+      primary: Основное
+      secondary: Второстепенное
+      heavy: Тяжелое
+      melee: Холодное
+      throwable: Метательное
+    option:
+      use: Использовать
+      take: Взять
+      drop: Выбросить
+      cancel: Отмена
+      equip: Экипировать
+      unequip: Снять
+      unload: Разрядить
+      load: Зарядить

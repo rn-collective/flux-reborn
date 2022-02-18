@@ -1,0 +1,36 @@
+en:
+  command:
+    givemoney:
+      description: "Give money to the player you looking at. Currencies: {currencies}"
+      syntax: <amount> [currency]
+    dropmoney:
+      description: "Drop money at your target location. Currencies: {currencies}"
+      syntax: <amount> [currency]
+    setmoney:
+      description: "Set money for player. Currencies: {currencies}"
+      syntax: <target> <amount> [currency]
+      message: "{player} has set {target}'s {currency} to {value}."
+  error:
+    not_enough_money: Insufficient funds.
+    invalid_currency: This is not a valid currency.
+  notification:
+    currency:
+      pickup: You picked up {value} {currency}.
+      receive: You received {value} {currency} from {target}.
+      give: You gave {value} {currency} to {target}.
+      drop: You dropped {value} {currency}.
+      set: Your {currency} balance has been set to {value}.
+  ui:
+    currency:
+      menu:
+        give: Give
+      title: Money
+      give:
+        title: Give money
+        message: Please, enter amount of {currency} to give.
+      drop:
+        title: Drop money
+        message: Please, enter amount of {currency} to drop.
+      take:
+        title: Take money
+        message: Please, enter amount of {currency} to take.

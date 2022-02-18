@@ -1,0 +1,10 @@
+categories:
+  display_typing:
+    name: config.display_typing.title
+    description: config.display_typing.desc
+configs:
+  display_exact_message:
+    name: config.display_typing.exact_message.name
+    description: config.display_typing.exact_message.desc
+    category: display_typing
+    type: boolean

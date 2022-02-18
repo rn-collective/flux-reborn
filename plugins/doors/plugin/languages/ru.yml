@@ -1,0 +1,19 @@
+ru:
+  door:
+    categories:
+      general: Общее
+    properties:
+      name: Название
+      title_type:
+        name: Внешний вид таблички
+        select: Выберите тип...
+      locked: Закрыто
+    title_type:
+      none: "Отсутствует"
+      center: "По центру"
+  ui:
+    door:
+      title: Двери
+      unlock: Отпереть
+      lock: Запереть
+      settings: Настройки

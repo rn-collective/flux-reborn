@@ -1,0 +1,45 @@
+categories:
+  stamina:
+    name: config.stamina.title
+    description: config.stamina.title
+configs:
+  stam_drain_scale:
+    name: config.stamina.stam_drain_scale.name
+    description: config.stamina.stam_drain_scale.desc
+    category: stamina
+    type: number
+    min_value: 0
+    max_value: 100
+    default_value: 1
+  stam_regen_scale:
+    name: config.stamina.stam_regen_scale.name
+    description: config.stamina.stam_regen_scale.desc
+    category: stamina
+    type: number
+    min_value: 0
+    max_value: 100
+    default_value: 1
+  stam_jump_penalty:
+    name: config.stamina.stam_jump_penalty.name
+    description: config.stamina.stam_jump_penalty.desc
+    category: stamina
+    type: number
+    min_value: 0
+    max_value: 1024
+    default_value: 25
+  stam_max:
+    name: config.stamina.stam_max.name
+    description: config.stamina.stam_max.desc
+    category: stamina
+    type: number
+    min_value: 0
+    max_value: 1024
+    default_value: 100
+  stam_regen_delay:
+    name: config.stamina.stam_regen_delay.name
+    description: config.stamina.stam_regen_delay.desc
+    category: stamina
+    type: number
+    min_value: 0
+    max_value: 256
+    default_value: 3

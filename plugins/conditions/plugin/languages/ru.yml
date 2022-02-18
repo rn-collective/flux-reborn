@@ -1,0 +1,38 @@
+ru:
+  condition:
+    steamid:
+      name: Игрок с определенным SteamID
+      text: SteamID {operator} {steam_id}
+      message: Введите SteamID игрока
+    model:
+      name: Игрок с определенной моделью
+      text: Модель {operator} {model}
+      message: Введите путь до модели
+    health:
+      name: Игрок с определенным уровнем здоровья
+      text: Здоровье {operator} {health}
+      message: Введите уровень здоровья
+    armor:
+      name: Игрок с определенным значением брони
+      text: Броня {operator} {armor}
+      message: Введите значение брони
+    weapon:
+      name: Игрок с определенным оружием в руках
+      text: Класс активного оружия {operator} {weapon}
+      message: Введите класс оружия
+  ui:
+    condition:
+      select_operator: <Выберите оператор>
+      select_parameter: <Выберите параметр>
+      right_click: Нажмите ПКМ здесь, чтобы добавить новое условие
+      add_condition: Добавить условие
+      set_parameter: Установить параметр...
+      set_operator: Установить оператор...
+      operators: Операторы
+      delete: Удалить условие
+      save:
+        title: Сохранение набора условий
+        message: Напишите название сохранения
+      load:
+        title: Загрузка набора условий
+        column: Выберите сохранение

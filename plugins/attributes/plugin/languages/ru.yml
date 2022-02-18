@@ -1,0 +1,28 @@
+ru:
+  command:
+    charsetattribute:
+      description: "Установить атрибут персонажа. Атрибуты: {attributes}"
+      syntax: <цель> <атрибут> <значение>
+      message: "{player} устанавливает {target} атрибут {attribute} на {value}."
+    charattributeboost:
+      description: "Усилить атрибут персонажа. Атрибуты: {attributes}"
+      syntax: <цель> <атрибут> <значение> <длительность>
+      message: "{player} усиливает {target} атрибут {attribute} на {value} на {time}."
+    charattributemultiplier:
+      description: "Дать игроку модификатор прокачки атрибута. Значение 1.5 ускорит прокачку на 50%, 2 - на 100% и т.д. Атрибуты: {attributes}"
+      syntax: <цель> <атрибут> <значение> <длительность>
+      message: "{player} добавляет {target} множитель прокачки атрибута {attribute} на {value} на {time}."
+  condition:
+    attribute:
+      name: Игрок с определенным атрибутом
+      text: Атрибут {attribute} {operator} {value}
+      message1: Выберите атрибут
+      message2: Выберите значение атрибута
+    attributes: Атрибуты
+  error:
+    attribute_not_valid: "'{attribute}' не является атрибутом!"
+  notification:
+    attribute:
+      boost: Ваш атрибут '{attribute}' был увеличен на {value} на {time}.
+      multiplier: Ваш множитель прокачки атрибута '{attribute}' был установлен на {value} на {time}.
+      set: Ваш атрибут '{attribute}' был установлен на {value}.

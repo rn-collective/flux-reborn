@@ -1,0 +1,16 @@
+._*.*
+._*
+*.exe
+*.lnk
+*.db
+*.old
+*.cache
+*.vpk
+*.rad
+*.bat
+*.local.yml
+*.local.lua
+*.generated.lua
+.vscode
+.nano
+.vim

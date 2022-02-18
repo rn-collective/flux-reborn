@@ -1,0 +1,19 @@
+en:
+  door:
+    categories:
+      general: General
+    properties:
+      name: Name
+      title_type:
+        name: Title Type
+        select: Select...
+      locked: Locked
+    title_type:
+      none: "Disabled"
+      center: "Centered"
+  ui:
+    door:
+      title: Doors
+      unlock: Unlock
+      lock: Lock
+      settings: Settings

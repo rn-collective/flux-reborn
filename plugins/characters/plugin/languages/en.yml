@@ -1,0 +1,97 @@
+en:
+  command:
+    charsetname:
+      description: "Set character's name."
+      syntax: <target> <new name>
+      message: "{player} has set {target}'s name to {name}."
+    charsetmodel:
+      description: "Set character's model."
+      syntax: <target> <new model>
+      message: "{player} has set {target}'s model to {model}."
+    charsetdesc:
+      description: "Set character's physical description."
+      syntax: <target> <new desc>
+      message: "{player} has set {target}'s description to {desc}."
+    charsetgender:
+      description: "Set character's gender: male, female or no_gender."
+      syntax: <target> <new gender>
+      message: "{player} has set {target}'s gender to {gender}."
+  condition:
+    character:
+      name: Specific Character
+      text: "Character {operator} {character}"
+      message: Select Character
+    characters: Characters
+  config:
+    character:
+      title: Character
+      desc: Character system settings.
+      min_name_len:
+        name: Minimum Character Name Length
+        desc: "The minimum length of the character's name."
+      max_name_len:
+        name: Maximum Character Name Length
+        desc: "The maximum length of the character's name."
+      min_desc_len:
+        name: Minimum Character Description Length
+        desc: "The minimum length of the character's physical description."
+      max_desc_len:
+        name: Maximum Character Description Length
+        desc: "The maximum length of the character's physical description."
+  error:
+    invalid_gender: "Invalid gender."
+  notification:
+    name_changed: "Your character's name was changed to {name}."
+    model_changed: "Your character's model was changed to {model}."
+    desc_changed: "Your character's description was changed to {desc}."
+    gender_changed: "Your character's gender was changed to {gender}."
+  permission:
+    categories:
+      character_management: Character Management
+  ui:
+    gender:
+      male: Male
+      female: Female
+      no_gender: No gender
+    hud:
+      loading:
+        characters: Loading characters, please wait...
+    main_menu:
+      disconnect: Disconnect
+      disconnect_msg: Are you sure that you want to disconnect from this server?
+      continue: Continue
+      developed_by: Developed by {author}.
+    char_create:
+      title: CREATE A CHARACTER
+      text: CHARACTER CREATION
+      create: CREATE
+      load: LOAD CHARACTER
+      select: Select
+      delete: Delete
+      general: General Character Information
+      name: "Full name:"
+      random_name: Randomize Name.
+      desc: "Description:"
+      gender: "Gender:"
+      skin: "Skin"
+      back: BACK
+      next: NEXT
+      main_menu: MAIN MENU
+      confirm: Create Character
+      confirm_msg: Are you sure that you want to create this character?
+      delete_confirm: Delete Character
+      delete_confirm_msg: "Please type in your character's name to confirm deletion: {name}"
+      name_invalid: Invalid name.
+      name_len: "Your character's name must be between {min} and {max} characters long."
+      desc_invalid: Invalid physical description.
+      desc_len: "Your character's physical description must be between {min} and {max} characters long."
+      unknown_error: Unknown Error. Meow probably screwed up again.
+      no_gender: You must select a gender.
+      no_model: You must select a model.
+      error:
+        fatal: "Something probably went wrong, please try reconnecting."
+        critical: "Server may be experiencing connection issues, please wait..."
+        lag: "The request is taking a while, hold up..."
+        record: "ActiveRecord screwed up again, try reconnecting or restarting your server..."
+    tab_menu:
+      main_menu: Main Menu

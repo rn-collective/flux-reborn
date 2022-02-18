@@ -1,0 +1,136 @@
+en:
+  config:
+    general:
+      title: General settings
+      desc: General settings related to the Flux framework itself.
+      prefixes:
+        name: Command prefixes
+        desc: What chat prefixes to consider as command prefixes (<prefix>somecommand, e.g. /somecommand).
+      walk_speed:
+        name: Walk speed
+        desc: How fast does the player walk.
+      run_speed:
+        name: Run Speed
+        desc: How fast does the player run (while holding SHIFT by default).
+      crouch_speed:
+        name: Crouchwalk speed
+        desc: How fast does the player walk while crouched (while holding CTRL by default).
+      jump_power:
+        name: Jump Power
+        desc: How high player jumps by default.
+      respawn_time:
+        name: Respawn time
+        desc: How long does it take for a player to respawn after their death (in seconds).
+      root_steamid:
+        name: Root access SteamID
+        desc: Gives root access to player with this SteamID.
+      data_save_interval:
+        name: Server data save interval
+        desc: Amount of time between server data savings.
+      player_data_save_interval:
+        name: Player data save interval
+        desc: Amount of time between player data savings.
+  error:
+    cant_now: You cannot do this right now!
+    command:
+      higher_immunity: "{target} has higher immunity than you!"
+      no_access: You do not have access to this command!
+      not_valid: "'{command}' is not a valid command!"
+      player_invalid: "'{player}' is not a valid player!"
+      syntax: "Incorrect syntax, use /{command} {syntax}"
+      you_must_enter_command: You must enter a command!
+    invalid_time: "'{time}' could not be interpreted as time!"
+    invalid_value: "You specified an invalid argument value!"
+    invalid_amount: You specified an invalid amount!
+    invalid_entity: This is not a valid entity!
+    too_far: Target is too far!
+    wait: You can not do it right now, please wait!
+  hint:
+    forums:
+      You can visit TeslaCloud forums to get support, download schemas and
+      chat with fellow Flux users!
+    hints:
+      These hints can be disabled from clientside settings menu. Not in
+      this build though.
+    tab: "Press 'Show Scoreboard' key (default: TAB) to open Flux's menu."
+    commands:
+      Start typing a command in chat to see a list of all available commands and
+      their syntax help.
+    bugs:
+      Encountered a bug? Have an idea that we should totally add to Flux? Visit
+      our forums at https://teslacloud.net and tell us about it!
+  notification:
+    console: Console
+  operator:
+    less: Less
+    greater: Greater
+    less_equal: Less or equal
+    greater_equal: Greater or equal
+    equal: Equal
+    unequal: Unequal
+    and: AND
+    or: OR
+    not: NOT
+  time:
+    just_now: "just now"
+    second: "second"
+    seconds: "seconds"
+    minute: "minute"
+    minutes: "minutes"
+    hour: "hour"
+    hours: "hours"
+    day: "day"
+    days: "days"
+    week: "week"
+    weeks: "weeks"
+    year: "year"
+    years: "years"
+    from_now: "from now"
+    ago: "ago"
+    over: "over"
+    about: "about"
+    permanently: permanently
+    for: "for {time}"
+    and: and
+  tool:
+    measure:
+      name: Measure Tool
+      desc: Use this to measure distance between two points.
+      system_header: Measurement System
+  ui:
+    hud:
+      dead: "*DEAD*"
+      bar_text:
+        getup: GETTING UP...
+        respawn: WAITING TO RESPAWN...
+      loading:
+        local_player: Preparing loading sequence, please wait...
+        player_object: Waiting for local player to be created, please wait...
+        schema: Loading schema and plugins, please wait...
+      player_message:
+        died: YOU DIED
+        respawn: RESPAWNING IN {time} SECOND(s).
+    avatar_tooltip: Left click - Open profile, Right click - Copy SteamID
+    scoreboard:
+      help: Clicking player's card may bring up some options.
+      ping: Ping
+      players_online: Players Online
+      title: PLAYER LIST
+    tab_menu:
+      admin: Admin
+      close_menu: Back
+      scoreboard: Players
+      help: Help
+    yes: "Yes"
+    no: "No"
+    unit:
+      title:
+        imperial: Imperial
+        metric: Metric
+        units: Source Engine Units
+      mm: mm
+      cm: cm
+      m: m
+      km: km
+      mi: mi
+      units: units

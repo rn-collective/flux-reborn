@@ -1,0 +1,19 @@
+en:
+  command:
+    fall:
+      description: Fall down on the ground.
+      syntax: "[Get up time]"
+    forcefall:
+      description: Forces a player to fall down on the ground.
+      syntax: "<target> [Get up time]"
+      message: "{player} forced {target} to fall over for {time} s."
+    forcegetup:
+      description: Forces a player to get up.
+      syntax: "<target> [Get up time]"
+      message: "{player} forced {target} to get up for {time} s."
+    getup:
+      description: Get up if you are currently fallen.
+      syntax: "[Get up time]"
+  ui:
+    hud:
+      press_jump_to_getup: Press the 'jump' key to get up...

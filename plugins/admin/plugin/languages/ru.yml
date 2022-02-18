@@ -1,0 +1,162 @@
+ru:
+  command:
+    ban:
+      description: Забанить урода!
+      syntax: <игрок> <срок блокировки> [причина]
+      message: "{admin} банит {target} на {time}. ({reason})"
+    freezebots:
+      description: Замораживает всех ботов.
+      message: "{player} замораживает ботов."
+    unfreezebots:
+      description: Размораживает всех ботов.
+      message: "{player} размораживает ботов."
+    addbots:
+      description: Добавляет определенное количество ботов на сервер.
+      syntax: "[количество]"
+      message: "{player} добавляет {amount} {bots} на сервер."
+      bot_one: бота
+      bot_many: ботов
+    kickbots:
+      description: Кикнуть всех ботов.
+      message: "{player} кикает всех ботов."
+    changelevel:
+      description: Меняет карту на указанную.
+      syntax: <карта> [задержка]
+      message: "{player} меняет карту на {map} через {delay} секунд!"
+    demote:
+      description: Понижает игрока до пользователя.
+      syntax: <игрок>
+      message: "{player} понижает {target} до пользователя."
+    kick:
+      description: Выкидывает игрока с сервера.
+      syntax: <игрок> [причина]
+      message: "{player} кикает {target} ({reason})."
+    restart:
+      description: Перезапускает текущую карту.
+      syntax: "[задержка]"
+      message: "{player} перезапускает карту через {delay} секунд!"
+    return:
+      description: Вернуть игрока туда, где он находился до телепорта.
+      syntax: <игрок>
+      message: "{player} возвращает {target} на предыдущую позицию."
+    setgroup:
+      description: "Меняет группу пользователя игрока. Группы: {groups}"
+      syntax: <игрок> <группа>
+      message: "{player} добавляет {target} к группе {group}."
+    tp:
+      description: Телепортировать игрока туда, куда вы смотрите.
+      syntax: <игрок>
+      message: "{player} телепортировал {target}."
+    tpto:
+      description: Телепортироваться к игроку.
+      syntax: <игрок>
+      message: "{player} телепортировался к {target}."
+    unban:
+      description: Разбанить игрока по SteamID, если тот находится в блокировке.
+      syntax: <забаненный SteamID>
+      message: "{player} разбанивает {target}."
+    vanish:
+      description: "Полностью скрывает игрока от всех, кроме администрации."
+      syntax: "<игрок> [скрыть]"
+      enabled: "{player} делает {target} невидимым."
+      disabled: "{player} делает {target} видимым."
+    fullbright:
+      description: "Отключает темноту."
+      syntax: "<игрок> <отключить_свет>"
+      enabled: "{player} включает ночное видение для {target}."
+      disabled: "{player} отключает ночное видение {target}."
+    freeze:
+      description: "Замораживает игрока."
+      syntax: "<игрок>"
+      message: "{player} заморозил {target}."
+    unfreeze:
+      description: "Размораживает игрока."
+      syntax: "<игрок>"
+      message: "{player} разморозил {target}."
+    respawn:
+      description: "Возродить мертвого игрока."
+      syntax: "<игрок> [tp / stay]"
+      message: "{target} был возрожден благодаря {player}."
+    godmode:
+      description: "Активирует режим бога игроку."
+      syntax: "<игрок> [активировать]"
+      enabled: "{player} Включил режим бога для {target}."
+      disabled: "{player} Выключил режим бога для {target}."
+  condition:
+    role:
+      name: Игрок с определенной ролью
+      text: Роль {operator} {role}
+      message: Выберите роль
+    roles: Роли
+  error:
+    group_not_valid: "'{group}' не является группой пользователя!"
+    not_banned: Steam ID '{steam_id}' не находится в блокировке!
+    no_permission: У вас недостаточно прав чтобы сделать это.
+    respawn: "Вы не можете возродить живого игрока."
+  notification:
+    demote: Вы были понижены с должности {group} до пользователя.
+    fullbright:
+      enabled: "Вы теперь видите в темноте."
+      disabled: "Вы больше не видите в темноте."
+    return: Вы были возвращены на предыдущую позицию.
+    setgroup: Ваша группа была изменена на {group}.
+    tp: Вы были телепортированы.
+    vanish:
+      enabled: Теперь вы скрыты от других игроков.
+      disabled: Теперь вы видимы для других игроков.
+    freeze: "Вы были заморожены {player}."
+    unfreeze: "Вы были разморожены {player}."
+    godmode:
+      enabled: "Режим бога активирован."
+      disabled: "Режим бога отключен."
+    respawn: "Вы были возрождены благодаря {player}."
+    config_changed: "{player} изменил значение конфига {config} на {value}."
+  permission:
+    categories:
+      administration: Администрирование
+      tools: Инструменты
+      spawn: Спавн
+      general: Основное
+      misc: Разное
+      level_design: Дизайн уровней
+      server_management: Управление сервером
+      player_management: Управление игроками
+      configuration: Конфигурация
+      compatibility: Совместимость
+  role:
+    user: Ранг, выдаваемый всем игрокам при заходе на сервер.
+    assistant: Административный ранг с низким уровнем доступа, для помощников администрации.
+    moderator: Административный ранг для доверенных членов команды.
+    admin: Административный ранг высшего уровня, имеющий доступ ко всему.
+  ui:
+    hud:
+      vanish: Вы невидимы
+    admin:
+      player_management: Управление игроками
+      players: Игроки
+      role: Роль
+      allow_all: Разрешить всё
+      no_all: "'Нет' для всех"
+      never_all: Запретить всё
+      expires: Истекает через
+      temp_permission:
+        title: Выдача временного разрешения
+        message: Укажите, на какое время будет выдано это разрешение. Если оно уже существует, оно будет продлено на это время. Оставьте пустым, чтобы изъять разрешение.
+      selector:
+        title: Изменение роли игрока
+        message: Выберите новую роль.
+        roles: Роли
+      config_editor: Конфигурация
+      new_config: Добавить новое значение
+      new_config_text: Введите новое значение.
+      delete_config: Удалить значение
+      delete_config_text: Вы уверены, что хотите удалить данное значение?
+    cmd_desc:
+      usage: "Синтаксис:"
+      aliases: "Алиасы:"
+    permission:
+      not_set: Не менять
+      allow: Разрешить
+      never: Запретить
+      error: Ошибка
+    no_reason: Причина не указана

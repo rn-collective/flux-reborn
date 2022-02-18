@@ -1,0 +1,5 @@
+name: Factions System
+description: Adds factions that player's character can be a member of.
+author: TeslaCloud Studios
+depends:
+  - characters

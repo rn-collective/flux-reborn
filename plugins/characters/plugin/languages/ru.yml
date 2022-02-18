@@ -1,0 +1,97 @@
+ru:
+  command:
+    charsetname:
+      description: Выставляет имя персонажа.
+      syntax: <игрок> <новое имя>
+      message: "{player} меняет имя {target} на {name}."
+    charsetmodel:
+      description: Выставляет модель персонажа.
+      syntax: <игрок> <новая модель>
+      message: "{player} меняет модель {target} на {model}."
+    charsetdesc:
+      description: Выставляет описание персонажа.
+      syntax: <игрок> <новое описание>
+      message: "{player} меняет описание {target} на {desc}."
+    charsetgender:
+      description: "Выставляет пол персонажа: male, female или no_gender."
+      syntax: <игрок> <новый пол>
+      message: "{player} меняет пол {target} на {gender}."
+  condition:
+    character:
+      name: Определенный персонаж
+      text: Персонаж {operator} {character}
+      message: Выберите персонажа
+    characters: Персонажи
+  config:
+    character:
+      title: Персонаж
+      desc: Настройка параметров персонажей.
+      min_name_len:
+        name: Минимальная длина имени
+        desc: Минимальное количество символов в имени персонажа.
+      max_name_len:
+        name: Максимальная длина имени
+        desc: Максимальное количество символов в имени персонажа.
+      min_desc_len:
+        name: Минимальная длина описания персонажа
+        desc: Минимальное количество символов в описании персонажа.
+      max_desc_len:
+        name: Максимальная длина описания персонажа
+        desc: Максимальное количество символов в описании персонажа.
+  error:
+    invalid_gender: "Некорректный пол персонажа."
+  notification:
+    name_changed: "Имя вашего персонажа было изменено на {name}."
+    model_changed: "Модель вашего персонажа была изменена на {model}."
+    desc_changed: "Описание вашего персонажа было изменено на {desc}."
+    gender_changed: "Пол вашего персонажа был изменен на {gender}."
+  permission:
+    categories:
+      character_management: Управление персонажем
+  ui:
+    gender:
+      male: Мужской
+      female: Женский
+      no_gender: Бесполый
+    hud:
+      loading:
+        characters: Загрузка персонажей, пожалуйста подождите...
+    main_menu:
+      disconnect: Отключиться
+      disconnect_msg: Вы действительно хотите отключиться от сервера?
+      continue: Продолжить
+      developed_by: Под авторством {author}.
+    char_create:
+      title: СОЗДАТЬ ПЕРСОНАЖА
+      text: СОЗДАНИЕ ПЕРСОНАЖА
+      create: СОЗДАТЬ
+      load: ЗАГРУЗИТЬ ПЕРСОНАЖА
+      select: Выбрать
+      delete: Удалить
+      general: Основная информация
+      name: "Полное имя:"
+      random_name: Случайное имя.
+      desc: "Описание:"
+      gender: "Пол:"
+      skin: "Скин"
+      back: НАЗАД
+      next: ДАЛЕЕ
+      main_menu: ГЛАВНОЕ МЕНЮ
+      confirm: Подтверждение создания персонажа
+      confirm_msg: Вы уверены, что хотите создать такого персонажа?
+      delete_confirm: Подтверждение удаления персонажа
+      delete_confirm_msg: "Вы уверены, что хотите удалить этого персонажа? Напишите его имя, для подтверждения: {name}"
+      name_invalid: Некорректное имя.
+      name_len: Длина имени Вашего персонажа должна быть от {min} до {max}.
+      desc_invalid: Некорректное описание.
+      desc_len: Длина описания Вашего персонажа должна быть от {min} до {max}.
+      unknown_error: Неизвестная ошибка.
+      no_gender: Вы не выбрали пол.
+      no_model: Вы не выбрали модель.
+      error:
+        fatal: "Что-то явно пошло не так, попробуйте перезайти."
+        critical: "Между вами и сервером могут быть проблемы соединения, пожалуйста подождите..."
+        lag: "На запрос ушло необычно много времени..."
+        record: "ActiveRecord снова сломался, попробуйте переподключиться или перезапустить сервер..."
+    tab_menu:
+      main_menu: Главное меню

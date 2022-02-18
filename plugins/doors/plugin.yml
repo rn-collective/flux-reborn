@@ -1,0 +1,5 @@
+name: Doors
+description: Door management plugin.
+author: TeslaCloud Studios
+depends:
+  - conditions

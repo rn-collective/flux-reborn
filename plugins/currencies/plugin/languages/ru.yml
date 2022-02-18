@@ -1,0 +1,36 @@
+ru:
+  command:
+    givemoney:
+      description: "Дать деньги игроку, на которого Вы смотрите. Валюты: {currencies}"
+      syntax: <количество> [валюта]
+    dropmoney:
+      description: "Положить деньги туда, куда Вы смотрите. Валюты: {currencies}"
+      syntax: <количество> [валюта]
+    setmoney:
+      description: "Установить количество валюты для игрока. Валюты: {currencies}"
+      syntax: <цель> <количество> [валюта]
+      message: "{player} устанавливает количество валюты {currency} у {target} на {value}."
+  error:
+    not_enough_money: Недостаточно денег.
+    invalid_currency: Валюта не найдена.
+  notification:
+    currency:
+      pickup: Вы подобрали {currency} x {value}.
+      receive: Вы получили {currency} x {value} от {target}.
+      give: Вы дали {target} {currency} x {value}.
+      drop: Вы положили {currency} x {value}.
+      set: Количество вашей валюты {currency} было установлено на {value}.
+  ui:
+    currency:
+      menu:
+        give: Дать
+      title: Деньги
+      give:
+        title: Дать деньги
+        message: Сколько валюты '{currency}' Вы хотите передать?
+      drop:
+        title: Положить деньги
+        message: Сколько валюты '{currency}' Вы хотите положить?
+      take:
+        title: Взять деньги
+        message: Сколько валюты '{currency}' Вы хотите взять?
