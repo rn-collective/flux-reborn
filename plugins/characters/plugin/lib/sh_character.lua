@@ -74,7 +74,12 @@ if SERVER then
   end
 
   function Characters.save(player, character)
-    if !IsValid(player) or !istable(character) or hook.run('PreSaveCharacter', player, character) == false then return end
+    if !IsValid(player)
+    or !istable(character)
+    or hook.run('PreSaveCharacter', player, character) == false
+    then
+      return
+    end
 
     hook.run('SaveCharacterData', player, character)
 
@@ -224,12 +229,9 @@ do
   local player_meta = FindMetaTable('Player')
 
   function player_meta:get_character_by_id(id)
-    local characters = self:get_all_characters()
-    if not table.is_empty(characters) then
-      for k, v in ipairs(characters) do
-        if id == tonumber(v.id) then
-          return v
-        end
+    for k, v in ipairs(self:get_all_characters()) do
+      if id == tonumber(v.id) then
+        return v
       end
     end
   end

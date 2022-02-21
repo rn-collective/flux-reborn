@@ -125,6 +125,10 @@ do
     return math.scale_x(x), math.scale(y)
   end
 
+  function math.scale_min(size)
+    return math.min(math.scale(size), math.scale_x(size))
+  end
+
   math.scale_y      = math.scale
   math.scale_width  = math.scale_x
   math.scale_height = math.scale
@@ -155,7 +159,7 @@ function number_meta:__index(key)
   elseif isnumber(value) then
     return tostring(self):sub(value, value)
   else
-    error('attempt to index a number value with a bad key ('..value..')', 2)
+    error('attempt to index a number value with a bad key ('..key..')', 2)
   end
 end
 

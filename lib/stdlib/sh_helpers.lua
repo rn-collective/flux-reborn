@@ -46,7 +46,7 @@ function require_relative(file_name)
     end
   else
     if string.find(file_name, 'sv_', 1, true) or
-       string.find(file_name, 'cratespec.lua', 1, true) or
+       string.find(file_name, 'cratespec', 1, true) or
        file_name:EndsWith('/init.lua') then
       return
     end

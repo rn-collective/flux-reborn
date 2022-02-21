@@ -189,6 +189,8 @@ function PANEL:set_stage(stage)
 end
 
 function PANEL:next_stage()
+  if self.request_sent then return false end
+
   if self.panel and self.panel.on_validate then
     local success, error = self.panel:on_validate()
 
@@ -328,6 +330,8 @@ function PANEL:open_panel(id)
   if self.panel.on_open then
     self.panel:on_open(self)
   end
+
+  hook.run('CharPanelCreated', id, self.panel)
 end
 
 function PANEL:add_stage(id, index)
