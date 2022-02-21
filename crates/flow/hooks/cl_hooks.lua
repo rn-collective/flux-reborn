@@ -366,14 +366,12 @@ function GM:AddTabMenuItems(menu)
     priority = 20
   })
 
-  --[[
   menu:add_menu_item('help', {
     title = t'ui.tab_menu.help',
     icon = 'fa-info-circle',
     panel = 'fl_help',
     priority = 50
   })
-  ]]
 end
 
 function GM:OnMenuPanelOpen(menu_panel, active_panel)
